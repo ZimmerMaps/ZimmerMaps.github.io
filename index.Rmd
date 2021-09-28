@@ -1,0 +1,30 @@
+---
+title: "Andrew Zimmer"
+image: "profile.jpg"
+links:
+  - label: CV
+    url: "zimmer_cv.pdf"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en"
+  - label: Email
+    url: "mailto:azimmer@email.arizona.edu"
+  - label: Twitter
+    url: "https://twitter.com/ZimmerMaps/"
+output:
+  postcards::solana
+---
+ 
+## Bio
+
+I am a Geography PhD student in the School of Geography, Development & Environment at the University of Arizona. My current research investigates the dynamics of human-environment relationships including urban growth, agriculture and food security in Africa. I am interested in the linkages between rural agricultural production and urban food security.
+
+Methodologically, much of my work focuses on the integration of social and environmental data, using GIS, spatial analysis, econometric and statistical modeling. I have conducted large-scale household surveys in both rural and urban settings in Kenya and Zambia, which form part of the dataset for my research. I couple these with various environmental and economic datasets to examine the environmental, socio-economic and spatial determinants of household food security within Southern Africa.
+
+
+## Education
+
+**PhD Geography** | University of Arizona, USA
+
+**MSc Environmental Science & Technology** | Lancaster University, UK
+
+**BA Geography** | Lancaster University, UK
