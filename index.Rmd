@@ -20,8 +20,6 @@ I am a Geography PhD student in the School of Geography, Development & Environme
 
 Methodologically, much of my work focuses on the integration of social and environmental data, using GIS, spatial analysis, econometric and statistical modeling. I have conducted large-scale household surveys in both rural and urban settings in Kenya and Zambia, which form part of the dataset for my research. I couple these with various environmental and economic datasets to examine the environmental, socio-economic and spatial determinants of household food security within Southern Africa.
 
-ABCDEFG
-
 ## Education
 
 **PhD Geography** | University of Arizona, USA
