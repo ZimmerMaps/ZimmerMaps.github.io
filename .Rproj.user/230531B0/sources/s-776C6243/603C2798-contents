@@ -59,12 +59,14 @@ town_info$Q1.5 <- factor(town_info$Q1.5, levels = c("Pemba", "Mbabala", "Mpongwe
 
 
 #Plot
-town_plot <- ggplot(town_info, aes(x = Q1.5, y =n)) +
+town_plot <- ggplot(town_info, aes(x = Q1.5, y =n, label = n)) +
   geom_bar(stat = "identity", fill = 'steelblue') +
   theme_bw() +
-  labs(x = "", y = "# Completed Surveys") +
+  labs(x = "", y = "# Completed Surveys", title = paste("Total Surveys Completed =", count)) +
   theme(axis.text.x = element_text(angle=45, hjust=1),
-        text = element_text(size=15))
+        text = element_text(size=15)) +
+  geom_text(size = 5, position = position_dodge(width = 1), vjust = -0.5, color = "steelblue") +
+  scale_y_continuous(limits = c(0,160), breaks = seq(0, 160, by = 20))
 town_plot
 
 
