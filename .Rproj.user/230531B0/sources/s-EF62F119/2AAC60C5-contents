@@ -1,0 +1,39 @@
+rm(list=ls()) #clear and close everything open
+
+library(factoextra)
+library(devtools)
+library(ggfortify)
+library(ggplot2)
+
+
+pca_data <- read.csv("/Users/azimmer/Documents/PhD Geography/Research/Urban Transformations Paper/Datasets/pca_data.csv")
+pca_data <- pca_data[complete.cases(pca_data), ]
+pca_data$Q1.5 <- as.factor(pca_data$Q1.5)
+class(pca_data$Q1.5)
+
+df <- pca_data[3:13]
+
+pca_res <- prcomp(df, scale. = TRUE)
+summary(pca_res)
+
+autoplot(pca_res, data = pca_data, colour = 'Q1.5')
+
+
+library(cluster)
+autoplot(clara(pca_data[3:13], 5))
+
+
+
+
+
+# Helper function 
+#::::::::::::::::::::::::::::::::::::::::
+var_coord_func <- function(loadings, comp.sdev){
+  loadings*comp.sdev
+}
+# Compute Coordinates
+#::::::::::::::::::::::::::::::::::::::::
+loadings <- pca_1$rotation
+sdev <- pca_1$sdev
+var.coord <- t(apply(loadings, 1, var_coord_func, sdev)) 
+var.coord[, 1:4]

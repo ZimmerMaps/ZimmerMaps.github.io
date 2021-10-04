@@ -1,0 +1,65 @@
+---
+title: "Andrew Zimmer"
+image: "profile.jpg"
+links:
+  - label: CV
+    url: "zimmer_cv.pdf"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
+  - label: Email
+    url: "mailto:azimmer@email.arizona.edu"
+  - label: Twitter
+    url: "https://twitter.com/ZimmerMaps/"
+output:
+  postcards::solana
+---
+ 
+ 
+## About Me
+
+👋 Hello! I am a Geography PhD candidate in the [School of Geography, Development & Environment][sgde]{target="_blank"} at the University of Arizona under the advisement of [Professor Tom Evans][tom]{target="_blank"}.
+
+My current research investigates the dynamics of human-environment relationships between agriculture, urban growth and food security in Africa. I am primarily interested in rural-urban linkages between agricultural production and urban food security.
+
+Methodologically, my work is interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use comes from large-scale household surveys in rural and urban settings across Sub-Saharan Africa. I work to couple these household level data with environmental and socio-economic data to examine and understand the spatial dynamics of food systems and food (in)security across southern Africa.
+
+For more information about my research, interests or potential collaboration, please get in touch.
+
+<br>
+
+## Education
+**PhD Geography** | University of Arizona, USA | 2018 - Present
+
+**MSc Environmental Science & Technology** | Lancaster University, UK | 2017
+
+**BA Geography** | Lancaster University, UK | 2013 - 2016
+
+<br>
+
+## Publications
+
+### 2021
+
+Guido, Z, Lopus, S, Waldman, K, Hannah, C, **Zimmer, A**, Krell, N, Knudson, C, Estes, L, Caylor, K, Evans, T (2021). **Perceived links between climate change and weather forecast accuracy: new barriers to tools for agricultural decision-making**. *Climatic Change*. [[Download]](./Publications/guido_2021_cc.pdf){target="_blank"}
+
+
+Davies, J, Hannah, C, Guido, Z, **Zimmer, A**, McCann, L, Battersby, J, Evans, T (2021). **Barriers to urban agriculture in Sub-Saharan Africa**. *Food Policy*. [[Download]](./Publications/davies_2021_fp.pdf){target="_blank"}
+
+
+Mack, E, Bunting, E, Herndon, J, Marcantonio, R, Ross, A, **Zimmer, A** (2021). **Conflict and its relationship to climate variability in Sub-Saharan Africa*. *Science of The Total Environment**. [[Download]](./Publications/mack_2021_stoten.pdf){target="_blank"}
+
+
+Pearson, A, Mack, E, Ross, A, Marcantonio, R, **Zimmer, A**, Bunting, E, Smith, A, Miller, J, Evans, T (2021). **Interpersonal Conflict over Water Is Associated With Household Demographiics, Domains of Water Insecurity, and Regional Conflict: Evidence from Nine Sites across Eight Sub-Saharan African Countries**. *Water*. [[Download]](./Publications/pearson_2021_water.pdf){target="_blank"}
+
+
+Hannah, C, Giroux, S, Krell, S, Lopus, S, McCann, L, **Zimmer, A**, Caylor, K, Evans, T (2021). **Has the vision of a gender quota rule been realized for community-based water management committees in Kenya?**. *World Development*. [[Download]](./Publications/hannah_2021_wd.pdf)
+
+### 2020
+
+**Zimmer, A**, Guido, Z, Tuholske, C, Pakalniskis, A, Lopus, S, Caylor, K, Evans, T (2020). **Dynamics of population growth in secondary cities across southern Africa**. *Landscape Ecology*. [[Download]](./Publications/zimmer_2020_le.pdf){target="_blank"}
+
+
+Guido, Z, **Zimmer, A**, Lopus, S, Hanah, C, Gower, D, Waldman, K, Krell, N, Sheffield, J, Caylor, K, Evans, T (2020). **Farmer forecasts: Impacts of seasonal rainfall expectations on agricultural decision-making in Sub-Saharan Africa**. *Climate Risk Management*. [[Download]](./Publications/guido_2020_crm.pdf){target="_blank"}
+
+[tom]:http://www.tomgeog.org/
+[sgde]:https://geography.arizona.edu

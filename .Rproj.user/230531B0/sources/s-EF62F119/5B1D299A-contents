@@ -1,0 +1,242 @@
+library(tidyverse)
+library(ggplot2)
+
+rm(list=ls()) #clear and close everything open
+
+joined_data <- read.csv("/Users/azimmer/Documents/PhD Geography/Research/Urban Transformations Paper/Datasets/complete_dataset_othervars.csv")
+
+joined_data <- joined_data[joined_data$source_location!= "I do not get any of this food type from this source", ]
+joined_data <- joined_data[ -c(1) ]
+
+#remove problem hhid
+joined_data <- joined_data[joined_data$Q1.3 != 2968, ]       
+
+#create a # food sources variable
+
+#all food types
+num_total_food_source <- joined_data %>% group_by(Q1.3) %>% tally()
+
+#just cereals
+num_cereal_source <- joined_data %>% 
+  subset(food_type == "cereals") %>%
+  group_by(Q1.3) %>%
+  tally()
+  
+food_source <- merge(num_total_food_source, num_cereal_source, by = "Q1.3")
+colnames(food_source) <- c("Q1.3", "num_total_foodsource", "num_cerealsource")
+
+joined_data <- merge(joined_data, food_source, by = "Q1.3", all.x =T)
+
+
+pca_data <- dplyr::select(joined_data, "Q1.3", "Q1.5", "rcsi_score", "total_income", 
+                          "food_expenditure", "num_total_foodsource", "num_cerealsource")
+
+pca_data <- pca_data %>% distinct()
+
+write.csv(pca_data, "/Users/azimmer/Downloads/pca_data.csv")
+
+
+#food_source_summary <- joined_data %>%
+ # group_by(Q1.5) %>%
+  #summarise(
+   # min_foodsource = min(num_total_foodsource),
+   # mean_foodsource = mean(num_total_foodsource),
+   # median_foodsource = median(num_total_foodsource),
+   # max_foodsource = max(num_total_foodsource),
+   # min_cerealssource= min(num_cerealsource),
+   # mean_cerealssource = mean(num_cerealsource),
+   # median_cerealssource = median(num_cerealsource),
+   # max_cerealssource = max(num_cerealsource))
+
+
+
+#make new columns with specific location
+joined_data$location_source_join <- paste(joined_data$source_location, "-", joined_data$table_type)
+
+joined_data_plotdata <- joined_data %>%
+  group_by(Q1.5, table_type, food_type, source_location) %>%
+  summarise(n = n()) %>%
+  mutate(freq = n / sum(n)*100)
+
+joined_data_plotdata <- joined_data_plotdata[complete.cases(joined_data_plotdata), ]
+
+joined_data_plotdata$source_location <- factor(joined_data_plotdata$source_location, 
+                                                    levels = c("Supermarket", 
+                                                               "Local retail shop (butcher/grocery)", 
+                                                               "Open-Air Market", 
+                                                               "Street vendor", 
+                                                               "Free food from another resident", 
+                                                               "Other",
+                                                               "My own farm",
+                                                               "Purchased food from other rural farm",
+                                                               "Purchased food from a friend / family farm",
+                                                               "Free food from a friend / family farm"))
+
+
+joined_data_plotdata$location_source_join <- factor(joined_data_plotdata$location_source_join, 
+                                                    levels = c("Supermarket - this_ua", 
+                                                               "Local retail shop (butcher/grocery) - this_ua", 
+                                                               "Open-Air Market - this_ua", 
+                                                               "Street vendor - this_ua", 
+                                                               "Free food from another resident - this_ua", 
+                                                               "Other - this_ua",
+                                                               "Supermarket - another_ua", 
+                                                               "Local retail shop (butcher/grocery) - another_ua", 
+                                                               "Open-Air Market - another_ua", 
+                                                               "Street vendor - another_ua", 
+                                                               "Free food from another resident - another_ua", 
+                                                               "Other - another_ua",
+                                                               "My own farm - rural",
+                                                               "Purchased food from other rural farm - rural",
+                                                               "Purchased food from a friend / family farm - rural",
+                                                               "Free food from a friend / family farm - rural",
+                                                               "Other - rural"))
+
+joined_data_plotdata$Q1.5 <- factor(joined_data_plotdata$Q1.5, 
+                                                    levels = c("Pemba", "Mbabala", "Mpongwe", "Batoka", "Petauke", "Namwala", "Nyimba",
+                                                               "Maamba", "Chongwe", "Itezhi-Tezhi", "Mkushi", "Mazabuka", "Kapiri Mposhi",
+                                                               "Choma"))
+
+joined_data_plotdata$table_type <- factor(joined_data_plotdata$table_type, 
+                                    levels = c("this_ua", "another_ua", "rural"))
+
+
+colors <- c("#08519c","#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#eff3ff", 
+            "#006d2c", "#31a354", "#74c476", "#a1d99b", "#c7e9c0", "#edf8e9",
+            "#a63603", "#e6550d", "#fd8d3c", "#fdbe85", "#feedde")
+
+
+#subset cereals, fruit and veg
+joined_data_plotdata <- joined_data_plotdata[ joined_data_plotdata$food_type %in% c("cereals","pulses", "veg"), ]
+
+ggplot(joined_data_plotdata, aes(x = Q1.5, y = freq, fill = source_location)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set3") +
+  labs(x = "TOWN", y = "PERCENTAGE (%)", fill = "FOOD SOURCE") +
+  theme(axis.text.x = element_text(angle=45, hjust=1),
+        text = element_text(size=15)) +
+  facet_wrap(~food_type + table_type, ncol =3) 
+
+
+# city level variables
+
+city_vars <- read.csv("/Users/azimmer/Documents/PhD Geography/Research/Urban Transformations Paper/Datasets/city_variables.csv")
+
+city_vars_distplot <- dplyr::select(city_vars, X, lusaka_dist, next_urban_dist, neighbor3_dist, trunk_dist)
+city_vars_distplot <- city_vars_distplot[complete.cases(city_vars_distplot), ]
+
+city_vars_distplot <- gather(city_vars_distplot, dist_to, distance, lusaka_dist:trunk_dist, factor_key=TRUE)
+
+city_vars_distplot$X <- factor(city_vars_distplot$X,
+                                    levels = c("Pemba", "Mbabala", "Mpongwe", "Batoka", "Petauke", "Namwala", "Nyimba",
+                                               "Maamba", "Chongwe", "Itezhi-Tezhi", "Mkushi", "Mazabuka", "Kapiri Mposhi",
+                                               "Choma"))
+
+
+ggplot(city_vars_distplot, aes(x = X, y = distance, fill = dist_to)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme_bw() +
+  labs(x = "", y = "Distance (km)", fill = "") +
+  scale_fill_brewer(palette = "Set2", labels = c("Dist - Lusaka", "Dist - Neighbor", "Dist - 3 Neighbor Avg,", "Dist - Trunk Rd")) +
+  theme(axis.text.x = element_text(angle=45, hjust=1),
+        text = element_text(size=15)) 
+  
+#### MAPPING ####
+
+# creating an inset map of Zambia in Africa and then a map of urban areas in Zambia
+
+# necessary packages
+library(tidyverse)
+library(sf)
+library("rnaturalearth")
+
+#read in useful data
+spdf_africa <- ne_countries(continent = 'africa', returnclass = "sf", scale = 10)
+spdf_zambia <- ne_countries(country = 'zambia', returnclass = "sf", scale = 10)
+
+town_gps <- read_csv("/Users/azimmer/Documents/PhD Geography/Research/Urban Transformations Paper/Datasets/Town_GPS.csv")
+town_gps_sf <- st_as_sf(town_gps, coords = c("Longitude", "Latitude"), crs = 4326)
+lusaka_gps <- read_csv("/Users/azimmer/Documents/PhD Geography/Research/Urban Transformations Paper/Datasets/Lusaka_GPS.csv")
+lusaka_gps_sf <- st_as_sf(lusaka_gps, coords = c("Longitude", "Latitude"), crs = 4326)
+
+#trunk roads data 
+trunk_roads <- st_read("/Users/azimmer/Documents/PhD Geography/Research/Market Governance Paper/GIS Roads Data/Trunk_Roads.shp")
+
+#for plotting
+spdf_europe <- ne_countries(continent = 'europe', returnclass = "sf")
+spdf_asia <- ne_countries(continent = 'asia', returnclass = "sf")
+
+
+# Map 1 - Zambia in Africa
+africa_map <- ggplot() +
+  geom_sf(data = spdf_africa, fill = 'grey93') +
+  geom_sf(data = spdf_europe, fill = 'grey93') +
+  geom_sf(data = spdf_asia, fill = 'grey93') +
+  geom_sf(data = spdf_zambia, fill = '#004225') +
+  labs(x = '', y = '') +
+  theme_void() +
+  ylim(c(-36,36)) + xlim(-16,50) +
+  theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+africa_map
+
+
+# Map 2 - Cities in Zambia
+
+zambia_inset <- ggplot()+
+  geom_sf(data = spdf_zambia, fill = 'grey93') +
+  geom_sf(data = trunk_roads, aes(fill = "Trunk Roads")) +
+  geom_point(data = lusaka_gps, aes(x = Longitude, y = Latitude, color = "Lusaka"), size = 5) +
+  geom_point(data = town_gps, aes(x = Longitude, y = Latitude, color = "Sample Cities"), size = 5, shape = 18) +
+  scale_color_manual(values = c("#004225", "steelblue")) +
+  guides(colour = guide_legend(override.aes = list(shape = 18))) +
+  labs(color = NULL, fill = NULL) +
+  theme(axis.line=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        panel.background=element_blank(),
+        panel.border=element_blank(),
+        panel.grid.major=element_blank(),
+        panel.grid.minor=element_blank(),
+        plot.background=element_blank(),
+        legend.position = 'bottom')
+
+zambia_inset
+
+inset_map <- ggdraw() +
+  draw_plot(zambia_inset) +
+  draw_plot(africa_map, x = 0.02, y = 0.75, width = 0.25, height = 0.25)
+inset_map
+
+# Population Figure
+town <- c('Batoka', 'Choma', 'Chongwe', 'Itezhi-Tezhi', 'Kapiri Mposhi', 'Maamba', 'Mazabuka',
+          'Mbabala', 'Mkushi', 'Mpongwe', 'Namwala', 'Nyimba', 'Pemba', 'Petauke')
+population <- c(5341, 64085,	13998,	14426,	56193,	8712,	35055,	1076,	18486,	4882,	7839,	8118,	467,	7041)
+
+town_populations <- data.frame(town, population)
+
+population_plot <- town_populations %>%
+  mutate(town = fct_reorder(town, population)) %>%
+  ggplot(aes(x = town, y = population)) +
+  geom_bar(stat = "identity", fill = '#004225') +
+  theme_bw() +
+  labs(x = "", y = "Population (2018)", title = paste("Total Surveys Completed =", count)) +
+  scale_y_continuous(labels = scales::comma) +
+  theme(axis.text.x = element_blank(),
+        axis.ticks = element_blank())
+population_plot
+
+
+town_plot
+
+pop_survey_plot <- ggarrange(population_plot, town_plot, nrow = 2, labels = c("B", "C"))
+pop_survey_plot
+
+ggarrange(inset_map,
+          ggarrange(population_plot, town_plot, nrow = 2, align = "v"),
+          ncol = 2)
+
+
