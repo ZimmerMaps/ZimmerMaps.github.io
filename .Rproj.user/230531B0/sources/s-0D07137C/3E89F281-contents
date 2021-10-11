@@ -1,0 +1,155 @@
+rm(list=ls()) #clear and close
+
+library(googlesheets4)
+library(tidyverse)
+library(usmap)
+library(dplyr)
+library(urbnmapr)
+library(tidygeocoder)
+library(sf)
+library(ggsflabel)
+library(ggpubr)
+library(scales)
+library(cowplot)
+library(viridis)
+library(RColorBrewer)
+
+googlesheets4::sheets_auth(email = "azimmer@email.arizona.edu")
+
+
+# Read in progress tracking sheet from google drive
+county_npi_data <- read_sheet("https://docs.google.com/spreadsheets/d/1-kbRNzOiLIbQAYpumOQoyMUFFTlCmwKdiFgzRTlY4Tc/edit?usp=sharing",
+                              sheet = "US Counties")
+
+1
+
+city_npi_data <- read_sheet("https://docs.google.com/spreadsheets/d/1-kbRNzOiLIbQAYpumOQoyMUFFTlCmwKdiFgzRTlY4Tc/edit?usp=sharing",
+                              sheet = "US Cities")
+
+
+
+# select useful columns for plotting by county FIPS and rename
+county_npi_data <- dplyr::select(county_npi_data, "CTY_ST_FIPS", "State...7", "County", "Status", "Date Last Coded")
+colnames(county_npi_data) <- c("fips", "state", "county", "status", "date_coded")
+county_npi_data$status <- as.character(county_npi_data$status)
+county_npi_data$date_coded <- as.Date(county_npi_data$date_coded)
+
+#change last coded date to month/year only
+county_npi_data$date_coded <- format(county_npi_data$date_coded, "%m/%Y")
+
+#change date to categorical variable
+county_npi_data$date_coded <- as.factor(county_npi_data$date_coded)
+
+#reorder factor levels so they plot nicely in date order
+county_npi_data$date_coded <- factor(county_npi_data$date_coded, levels = c("04/2020", "05/2020", "06/2020", "07/2020", "08/2020",
+                                                                            "09/2020", "10/2020", "11/2020", "12/2020", "01/2021",
+                                                                            "02/2021", "03/2021", "04/2021", "05/2021", "06/2021", 
+                                                                            "07/2021", "08/2021", "09/2021", "10/2021"))
+
+
+# Obtain county polygon data
+states_sf <- get_urbn_map(map = "states", sf = TRUE)
+counties_sf <- get_urbn_map(map = "counties", sf = TRUE)
+
+# Merge polygonal data with coded data
+counties_sf <- merge(counties_sf, county_npi_data, by.x = "county_fips", by.y = "fips")
+
+# set colors for plot
+nb.cols <- 17
+mycolors <- colorRampPalette(brewer.pal(8, "RdYlGn"))(nb.cols)
+
+
+# Plot county level data 
+county_plot <- ggplot() +
+  # Plot county data and fill with value
+  geom_sf(data=counties_sf, mapping = aes(fill = date_coded), color = 'grey65', size = 0.1) +
+  # Overlay State Outlines
+  geom_sf(data = states_sf, fill = NA, color = "grey20", size = 0.2) +
+  # Remove grid lines from plot
+  coord_sf(datum = NA) +  
+  labs(fill = "Date Last Coded") + 
+  theme(plot.background = element_rect(color = "NA"),
+        legend.background = element_rect(color = "NA"),
+        legend.position = "right", legend.key.height = unit(0.7, "cm")) +
+  scale_fill_manual(values = mycolors, na.value="grey") 
+  
+county_plot
+
+
+
+
+write.csv(county_npi_data, "/Users/azimmer/Desktop/covid_npi_map1.csv")
+
+county_npi_data <- read.csv("/Users/azimmer/Desktop/covid_npi_map1_clean.csv", colClasses = c(fips = "character"))
+
+# Geocode cities
+city_npi_data<- city_npi_data %>% geocode(city = City, state = State,
+                               method = 'osm')
+city_npi_data <- filter(city_npi_data, `Completed Coding` == "TRUE")
+city_npi_data <- st_as_sf(city_npi_data, coords = c("long", "lat"), 
+                         crs = 4326, agr = "constant")
+
+
+# Obtain county polygon data
+states_sf <- get_urbn_map(map = "states", sf = TRUE)
+counties_sf <- get_urbn_map(map = "counties", sf = TRUE)
+
+# Merge polygonal data with coded data
+counties_sf <- merge(counties_sf, county_npi_data, by.x = "county_fips", by.y = "fips")
+
+
+# Plot county level data 
+county_plot <- ggplot() +
+  # Plot county data and fill with value
+  geom_sf(data=counties_sf, mapping = aes(fill = status), color = 'grey65', size = 0.1) +
+  # Overlay State Outlines
+  geom_sf(data = states_sf, fill = NA, color = "grey20", size = 0.2) +
+  # Add coded cities
+  #geom_sf(data = city_npi_data, color = "darkred", size = 1) +
+  #geom_sf_label_repel(data =city_npi_data, aes(label = City)) +
+  # Remove grid lines from plot
+  coord_sf(datum = NA) +  
+  labs(fill = "Coding Status") + 
+  theme(plot.background = element_rect(color = "NA"),
+        legend.background = element_rect(color = "NA"),
+        legend.position = "right", legend.justification = 'top') +
+  scale_fill_manual(values = c("steelblue", "#e28743", 'grey80', "forestgreen"), labels = c("Complete", "Assigned", "Not Coded", "Updated"))
+
+county_plot
+
+
+pop_county_data <- read.csv("/Users/azimmer/Downloads/co-est2019-alldata.csv")
+pop_county_data <- filter(pop_county_data, !(`County` == 0))
+pop_county_data$CTYNAME <- gsub('\\s+', '', pop_county_data$CTYNAME)
+pop_county_data <- dplyr::select(pop_county_data, STNAME, CTYNAME, CENSUS2010POP, POPESTIMATE2019)
+colnames(pop_county_data) <- c("state", "county", "2010pop", "2019pop")
+pop_county_data$`2019pop`<- as.numeric(pop_county_data$`2019pop`)
+
+pop_county_data <- merge(county_npi_data, pop_county_data, by=c("state","county"))
+
+pie_data <- pop_county_data %>%
+  group_by(status) %>%
+  summarise(sum = sum(`2019pop`)) %>%
+  mutate(perc = (sum/ sum(sum))*100)
+
+pie_data <- pie_data %>%
+  arrange(desc(status)) %>%
+  mutate(lab.ypos = cumsum(perc) - 0.5*perc)
+
+pie_plot <- ggplot(pie_data, aes(x="", y=perc, fill=status)) +
+  geom_bar(stat="identity", width=1) +
+  coord_polar("y", start=0) +
+  theme_void() +
+  theme(legend.position = "none") +
+  scale_fill_manual(values = c("steelblue", "#e28743", 'grey80', "forestgreen"), labels = c("Complete", "Assigned", "Not Coded", "Updated")) +
+  geom_text(aes(y = lab.ypos, label = percent(perc/100)), size=4, color = "grey10") +
+  labs(title = "% US population") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+pie_plot
+
+ggdraw(county_plot) +
+  draw_plot(pie_plot, 0.77, .25, .2, .4) +
+  draw_plot_label(c("", ""), c(0, 0.45),c(1, 0.95), size = 12)
+
+  
