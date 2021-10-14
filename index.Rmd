@@ -46,7 +46,7 @@ Guido, Z, Lopus, S, Waldman, K, Hannah, C, **Zimmer, A**, Krell, N, Knudson, C, 
 Davies, J, Hannah, C, Guido, Z, **Zimmer, A**, McCann, L, Battersby, J, Evans, T (2021). **Barriers to urban agriculture in Sub-Saharan Africa**. *Food Policy*. [[Download]](./Publications/davies_2021_fp.pdf){target="_blank"}
 
 
-Mack, E, Bunting, E, Herndon, J, Marcantonio, R, Ross, A, **Zimmer, A** (2021). **Conflict and its relationship to climate variability in Sub-Saharan Africa*. *Science of The Total Environment**. [[Download]](./Publications/mack_2021_stoten.pdf){target="_blank"}
+Mack, E, Bunting, E, Herndon, J, Marcantonio, R, Ross, A, **Zimmer, A** (2021). **Conflict and its relationship to climate variability in Sub-Saharan Africa**. *Science of The Total Environment*. [[Download]](./Publications/mack_2021_stoten.pdf){target="_blank"}
 
 
 Pearson, A, Mack, E, Ross, A, Marcantonio, R, **Zimmer, A**, Bunting, E, Smith, A, Miller, J, Evans, T (2021). **Interpersonal Conflict over Water Is Associated With Household Demographiics, Domains of Water Insecurity, and Regional Conflict: Evidence from Nine Sites across Eight Sub-Saharan African Countries**. *Water*. [[Download]](./Publications/pearson_2021_water.pdf){target="_blank"}
