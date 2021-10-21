@@ -1,5 +1,7 @@
 ---
-title: "Andrew Zimmer"
+title: "Andrew Zimmer - University of Arizona"
+description: "Andrew Zimmer - PhD Candidate - Personal Website"
+site_type: Person
 image: "profile.jpg"
 links:
   - label: CV
