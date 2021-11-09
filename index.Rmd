@@ -11,6 +11,9 @@ links:
     url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
   - label: Email
     url: "mailto:azimmer@email.arizona.edu"
+  - label: Research
+    url: "research.html"
+
  # - label: Twitter
  #  url: "https://twitter.com/ZimmerMaps/"
 output:

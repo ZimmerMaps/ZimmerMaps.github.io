@@ -1,0 +1,32 @@
+---
+title: "Research"
+description: "Andrew Zimmer - PhD Candidate - Research Projects"
+org_name: "University of Arizona"
+image: "profile.jpg"
+links:
+  - label: Home
+    url: "index.html"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
+  - label: Email
+    url: "mailto:azimmer@email.arizona.edu"
+output:
+  postcards::solana
+---
+ 
+## Agriculture, Food Security and Urbanization in Africa
+
+Add some text about the project here
+
+<center>
+
+![your image caption](urban_ag.jpg){width=300px; height=300px}
+</center>
+
+## COVID-19 in USA
+
+Add some text about the project here
+
+<center>
+![your image caption](urban_ag.jpg){width=300px; height=300px}
+</center>
