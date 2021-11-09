@@ -20,10 +20,9 @@ output:
   postcards::solana
 ---
  
- 
 ## About Me
 
-👋 Hello! I am a Geography PhD candidate in the [School of Geography, Development & Environment][sgde] at the University of Arizona under the advisement of [Professor Tom Evans][tom].
+👋 Hello! I am a Geography PhD candidate in the [School of Geography, Development & Environment][sgde] at the University of Arizona under the advisement of [Tom Evans][tom].
 
 My current research investigates the dynamics of human-environment relationships between agriculture, urban growth and food security in Africa. I am primarily interested in rural-urban linkages between agricultural production and urban food security.
 
