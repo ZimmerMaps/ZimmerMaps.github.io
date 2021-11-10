@@ -1,32 +1,95 @@
 ---
-title: "Research"
+title: "Projects"
 description: "Andrew Zimmer - PhD Candidate - Research Projects"
 org_name: "University of Arizona"
 image: "profile.jpg"
 links:
   - label: Home
     url: "index.html"
-  - label: Google Scholar
-    url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
-  - label: Email
-    url: "mailto:azimmer@email.arizona.edu"
+ # - label: CV
+#    url: "zimmer_cv.pdf"
+#  - label: Email
+#    url: "mailto:azimmer@email.arizona.edu"
+#  - label: Teaching
+#    url: "teaching.html"
+
 output:
   postcards::solana
 ---
- 
-## Agriculture, Food Security and Urbanization in Africa
+## Current Projects
+<br>
+<font size="4"> **Linkages and interactions between urban food security and rural agricultural systems**</font> 
+<br>
 
-Add some text about the project here
-
+This research investigates linkages and interactions between urban food security and rural agricultural production. We focus on evaluating the impact of environmental variability on rural agricultural production and how this affects urban food security. My dissertation research investigates how the dynamics of urban population growth across secondary cities in southern Africa affect rural-urban linkages and ultimately household food security. We use household survey datasets in combination with large scale socio-environmental data. 
 <center>
-
-![your image caption](urban_ag.jpg){width=300px; height=300px}
+<br>
+![Urban Agriculture in Choma, Zambia](urban_ag.jpg){width=300px; height=300px}
+<br>
+Urban agriculture in Choma, Zambia
 </center>
+<br>
+<br>
+<font size="4"> **Roots for Resilience Data Science Assistantship**</font> 
+<br>
 
-## COVID-19 in USA
+This program trains graduate students in the use of open science and computational infrastructure, such as CyVerse, to apply data science tools to their dissertation’s research and discovery, as well as increase their department’s data science capacity. This assistantship includes discussions, training, exploration and experimentation with tools supporting personal research activities within my research group and across the department. [More information][r4r]
+<br>
+<br>
 
-Add some text about the project here
 
+<font size="4"> **Research on COVID-19 Interventions and Impacts (ReCON)**</font> 
+<br>
+
+The COVID-19 pandemic has had a wide range of societal impacts. Along with an interdisciplinary team of researchers, I am working on understanding how governments have responded to mitigate the spread of COVID-19 through policies that seek to modify behavior and limit person-to-person transmission. We are also investigating how household food security has changes as a result of economic and other hardship caused by the pandemic. [More information][recon]
 <center>
-![your image caption](urban_ag.jpg){width=300px; height=300px}
+<br>
+![Urban Agriculture in Choma, Zambia](covidmap.jpg){width=300px; height=300px}
+<br>
+Non-Pharmaceutical Intervention Coding Progression (Nov 2021)
 </center>
+<br>
+<br>
+<font size="4"> **A socio-environmental synthesis of the linkages between water scarcity induced conflict and land use/land cover change in Africa to enhance multi-scalar decision making**</font> 
+<br>
+
+I am a member of a team of researchers investigating the relationships between climate change and conflict across Africa, funded through the Socio-Environmental Synthesis Center. This interdisciplinary team examine where, when and how conflicts arise over water. We analyze conflict events, environmental change, society and institutions to investigate the spate-temporal dynamics of water scarcity and how they are linked with conflict. [More information][sesync] 
+<center>
+<br>
+![Urban Agriculture in Choma, Zambia](sesync.jpg){width=300px; height=300px}
+<br>
+Distribution of Conflict Events by Sub-Saharan African Region (1997-2018)
+</center>
+<br>
+
+## Past Projects
+<br>
+<font size="4"> **Impacts of Agricultural Decision Making and Adaptive Management on Food Security**</font> 
+<br>
+
+I was a member of this interdisciplinary project that used high-frequency data from environmental sensors and farmers to understand how farmers respond to different environmental shocks, and how those shocks shape their perceptions of climate variability. This involved coupling data from SMS surveys, household surveys and environmental data in Kenya and Zambia. We also worked on monitoring the outbreak of Fall Armyworm in Zambia throughout the 2018-2019 agricultural season. [More information][faw]
+<center>
+<br>
+![Urban Agriculture in Choma, Zambia](kenya.jpg){width=300px; height=300px}
+<br>
+Maize fields, Nanyuki, Kenya (Photo: Zack Guido)
+</center>
+<br>
+<br>
+<font size="4"> **Carson Scholar Science Communication Program**</font> 
+<br>
+
+I was a Carson scholar in 2019 and received comprehensive training on the art of science communication. I worked with faculty mentors to develop my skills to explain the value of my research and improve my skills in presenting science to a variety of audiences. [More information][carson]
+
+
+
+
+
+
+[recon]:https://covidinterventions.arizona.edu
+[sesync]:https://www.sesync.org/project/propose-a-pursuit/a-socio-environmental-synthesis-of-the-linkages-between-water-scarcity
+[r4r]:https://datascience.arizona.edu/roots-resilience-0
+[faw]:http://www.faw.environment.arizona.edu/about_us.html
+[carson]:https://carson.arizona.edu
+
+
