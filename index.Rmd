@@ -10,7 +10,7 @@ links:
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
   - label: Email
-    url: "mailto:azimmer@email.arizona.edu"
+    url: "mailto:azimmer@arizona.edu"
   - label: Twitter
     url: "https://twitter.com/ZimmerMaps/"
 
