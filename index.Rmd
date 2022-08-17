@@ -23,15 +23,10 @@ output:
 ---
 
 ## About Me
-
-👋 Hello! I am a Geography PhD candidate in the [School of Geography, Development & Environment][sgde] at the University of Arizona.
-
-My current research investigates the dynamics of human-environment relationships between agriculture, urban growth and food security in Africa. I am primarily interested in rural-urban linkages between agricultural production and urban food security.
-
-Methodologically, my work is interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use comes from large-scale household surveys in both rural and urban settings across Sub-Saharan Africa. I work to couple these household level data with environmental and socio-economic data to examine and understand the spatial dynamics of food systems and food (in)security across southern Africa.
-
+I am a Geography PhD candidate in the [School of Geography, Development & Environment][sgde] at the University of Arizona.  
+My current research investigates the dynamics of human-environment relationships between agriculture, urban growth and food security in Africa. I am primarily interested in rural-urban linkages between agricultural production and urban food security.  
+Methodologically, my work is interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use comes from large-scale household surveys in both rural and urban settings across Sub-Saharan Africa. I work to couple these household level data with environmental and socio-economic data to examine and understand the spatial dynamics of food systems and food (in)security across southern Africa.  
 For more information about my research, interests or potential collaboration, please get in touch.
-
 <br>
 
 ## Education
@@ -47,6 +42,8 @@ Foreign Study at Oregon State University, 2014-2015
 ## Publications
 
 ### 2022
+
+**Zimmer, A**, Guido, Z, Davies, J, Joshi, N, Chilenga, A, Evans, T (2022). Food systems and rural-urban linkages in African secondary cities. *Urban Transformations*. [[Download]](./Publications/zimmer_2022_ut.pdf){target="_blank"}
 
 Davies, J, Blekking, J, Hannah, C, **Zimmer, A**, Joshi, N, Anderson, P, Chilenga, A, Evans, T (2022). Governance of traditional markets and rural-urban food systems in sub-Saharan Africa. *Habitat International*. [[Download]](./Publications/davies_2022_hi.pdf){target="_blank"}
 
@@ -67,7 +64,7 @@ Mack, E, Bunting, E, Herndon, J, Marcantonio, R, Ross, A, **Zimmer, A** (2021). 
 Pearson, A, Mack, E, Ross, A, Marcantonio, R, **Zimmer, A**, Bunting, E, Smith, A, Miller, J, Evans, T (2021). Interpersonal Conflict over Water Is Associated With Household Demographiics, Domains of Water Insecurity, and Regional Conflict: Evidence from Nine Sites across Eight Sub-Saharan African Countries. *Water*. [[Download]](./Publications/pearson_2021_water.pdf){target="_blank"}
 
 
-Hannah, C, Giroux, S, Krell, S, Lopus, S, McCann, L, **Zimmer, A**, Caylor, K, Evans, T (2021). Has the vision of a gender quota rule been realized for community-based water management committees in Kenya?. *World Development*. [[Download]](./Publications/hannah_2021_wd.pdf)
+Hannah, C, Giroux, S, Krell, S, Lopus, S, McCann, L, **Zimmer, A**, Caylor, K, Evans, T (2021). Has the vision of a gender quota rule been realized for community-based water management committees in Kenya?. *World Development*. [[Download]](./Publications/hannah_2021_wd.pdf){target="_blank"}
 
 ### 2020
 
