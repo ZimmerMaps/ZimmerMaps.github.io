@@ -5,21 +5,18 @@ org_name: "University of Arizona"
 site_type: Person
 image: "profile.jpg"
 links:
+  -  label: Research
+     url: "research.html"
   -  label: Publications
      url: publications.html
   -  label: Email
      url: "mailto:azimmer@arizona.edu"
-#    - label: Research
-#    url: research.html
   - label: CV
     url: "zimmer_cv.pdf"
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
   - label: Twitter
     url: "https://twitter.com/ZimmerMaps/"
-
-#  - label: Projects
-#   url: "research.html"
 #  - label: Teaching
 #     url: "teaching.html"
 output:

@@ -16,7 +16,8 @@ links:
 output:
   postcards::solana
 ---
-## Current Projects
+## Current Research
+
 <br>
 <font size="4"> **Linkages and interactions between urban food security and rural agricultural systems (2019-P)**</font> 
 <br>
@@ -30,13 +31,8 @@ Urban agriculture in Choma, Zambia
 </center>
 <br>
 <br>
-<font size="4"> **Roots for Resilience Data Science Assistantship (2021)**</font> 
-<br>
 
-This program trains graduate students in the use of open science and computational infrastructure, such as CyVerse, to apply data science tools to their dissertation’s research and discovery, as well as increase their department’s data science capacity. This assistantship includes discussions, training, exploration and experimentation with tools supporting personal research activities within my research group and across the department. [More information][r4r]
-<br>
-<br>
-
+## Recent Research
 
 <font size="4"> **Research on COVID-19 Interventions and Impacts (ReCON) (2020-P)**</font> 
 <br>
@@ -53,7 +49,7 @@ Non-Pharmaceutical Intervention Coding Progression (Nov 2021)
 <font size="4"> **A socio-environmental synthesis of the linkages between water scarcity induced conflict and land use/land cover change in Africa to enhance multi-scalar decision making (2019-P)**</font> 
 <br>
 
-I am a member of a team of researchers investigating the relationships between climate change and conflict across Africa, funded through the Socio-Environmental Synthesis Center. This interdisciplinary team examine where, when and how conflicts arise over water. We analyze conflict events, environmental change, society and institutions to investigate the spate-temporal dynamics of water scarcity and how they are linked with conflict. [More information][sesync] 
+I am a member of a team of researchers investigating the relationships between climate change and conflict across Africa, funded through the Socio-Environmental Synthesis Center. This interdisciplinary team examine where, when and how conflicts arise over water. We analyze conflict events, environmental change, society and institutions to investigate the spate-temporal dynamics of water scarcity and how they are linked with conflict.
 <center>
 <br>
 ![Urban Agriculture in Choma, Zambia](sesync.jpg){width=300px; height=300px}
@@ -62,7 +58,6 @@ Distribution of Conflict Events by Sub-Saharan African Region (1997-2018)
 </center>
 <br>
 
-## Past Projects
 <br>
 <font size="4"> **Impacts of Agricultural Decision Making and Adaptive Management on Food Security (2018-2019)**</font> 
 <br>
@@ -76,20 +71,8 @@ Maize fields, Nanyuki, Kenya (Photo: Zack Guido)
 </center>
 <br>
 <br>
-<font size="4"> **Carson Scholar Science Communication Program (2019)**</font> 
-<br>
-
-I was a Carson scholar in 2019 and received comprehensive training on the art of science communication. I worked with faculty mentors to develop my skills to explain the value of my research and improve my skills in presenting science to a variety of audiences. [More information][carson]
-
-
-
-
-
 
 [recon]:https://covidinterventions.arizona.edu
-[sesync]:https://www.sesync.org/project/propose-a-pursuit/a-socio-environmental-synthesis-of-the-linkages-between-water-scarcity
-[r4r]:https://datascience.arizona.edu/roots-resilience-0
 [faw]:http://www.faw.environment.arizona.edu/about_us.html
-[carson]:https://carson.arizona.edu
 
 
