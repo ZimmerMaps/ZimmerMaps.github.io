@@ -15,8 +15,8 @@ links:
     url: "zimmer_cv.pdf"
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
-  - label: Twitter
-    url: "https://twitter.com/ZimmerMaps/"
+#  - label: Twitter
+#    url: "https://twitter.com/ZimmerMaps/"
 #  - label: Teaching
 #     url: "teaching.html"
 output:
