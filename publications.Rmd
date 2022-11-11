@@ -11,6 +11,8 @@ output:
 ---
 ### 2022
 
+Mack, EA, Marcantonio, RA, Bunting, E, Ross, A, **Zimmer, A**, Zulu, LC, Gómez Fernández, EL, Herndon, J, Henebry, GM (2022). A Systematic Literature Review of Quantitative Studies Assessing the Relatiosnhip between Water and Conflict on the African Continent. *Sustainability*. [[Download]](./Publications/mack_2022_sustainability.pdf){target="_blank"}
+
 **Zimmer, A**, Guido, Z, Davies, J, Joshi, N, Chilenga, A, Evans, T (2022). Food systems and rural-urban linkages in African secondary cities. *Urban Transformations*. [[Download]](./Publications/zimmer_2022_ut.pdf){target="_blank"}
 
 Davies, J, Blekking, J, Hannah, C, **Zimmer, A**, Joshi, N, Anderson, P, Chilenga, A, Evans, T (2022). Governance of traditional markets and rural-urban food systems in sub-Saharan Africa. *Habitat International*. [[Download]](./Publications/davies_2022_hi.pdf){target="_blank"}
@@ -39,4 +41,4 @@ Hannah, C, Giroux, S, Krell, S, Lopus, S, McCann, L, **Zimmer, A**, Caylor, K, E
 **Zimmer, A**, Guido, Z, Tuholske, C, Pakalniskis, A, Lopus, S, Caylor, K, Evans, T (2020). Dynamics of population growth in secondary cities across southern Africa. *Landscape Ecology*. [[Download]](./Publications/zimmer_2020_le.pdf){target="_blank"}
 
 
-Guido, Z, **Zimmer, A**, Lopus, S, Hanah, C, Gower, D, Waldman, K, Krell, N, Sheffield, J, Caylor, K, Evans, T (2020). Farmer forecasts: Impacts of seasonal rainfall expectations on agricultural decision-making in Sub-Saharan Africa. *Climate Risk Management*. [[Download]](./Publications/guido_2020_crm.pdf){target="_blank"}
+Guido, Z, **Zimmer, A**, Lopus, S, Hannah, C, Gower, D, Waldman, K, Krell, N, Sheffield, J, Caylor, K, Evans, T (2020). Farmer forecasts: Impacts of seasonal rainfall expectations on agricultural decision-making in Sub-Saharan Africa. *Climate Risk Management*. [[Download]](./Publications/guido_2020_crm.pdf){target="_blank"}
