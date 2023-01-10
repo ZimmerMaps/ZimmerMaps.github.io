@@ -1,7 +1,7 @@
 ---
 title: "Andrew Zimmer"
 description: "Andrew Zimmer - PhD Candidate - Personal Website"
-org_name: "University of Arizona"
+org_name: "Montana State University"
 site_type: Person
 image: "profile.jpg"
 links:
@@ -10,11 +10,11 @@ links:
   -  label: Publications
      url: publications.html
   -  label: Email
-     url: "mailto:azimmer@arizona.edu"
+     url: "mailto:andrew.zimmer1@montana.edu"
   - label: CV
     url: "zimmer_cv.pdf"
   - label: Google Scholar
-    url: "https://scholar.google.com/citations?user=35RDM5kAAAAJ&hl=en/"
+    url: "https://scholar.google.com/citations?user=1-Xk5zMAAAAJ&hl=en"
 #  - label: Twitter
 #    url: "https://twitter.com/ZimmerMaps/"
 #  - label: Teaching
@@ -24,13 +24,13 @@ output:
 ---
 
 ## About Me
-I am a Geography PhD candidate in the [School of Geography, Development & Environment][sgde] at the University of Arizona.  
+I am a postdoctoral researcher in the [Department of Earth Sciences][msu_des] at Montana State University
 <br>
-My current research investigates the dynamics of human-environment relationships between agriculture, urban growth and food security in Africa. I am primarily interested in rural-urban linkages between agricultural production and urban food security.  
+My current research investigates the dynamics of human-environment relationships between urban growth, demographic change, extreme heat and food security in Africa
 <br>
-Methodologically, my work is interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use comes from large-scale household surveys in both rural and urban settings across Sub-Saharan Africa. I work to couple these household level data with environmental and socio-economic data to examine and understand the spatial dynamics of food systems and food (in)security across southern Africa.  
+Methodologically, my work in interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use is derrived from satellites, where I integrate them with large-scale household surveys in both rural and urban settings. 
 <br>
 For more information about my research, interests or potential collaboration, please get in touch.
 <br>
 
-[sgde]:https://geography.arizona.edu
+[msu_des]:https://www.montana.edu/earthsciences/
