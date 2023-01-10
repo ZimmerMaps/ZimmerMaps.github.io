@@ -24,12 +24,13 @@ output:
 ---
 
 ## About Me
-I am a postdoctoral researcher in the [Department of Earth Sciences][msu_des] at Montana State University
+I am a postdoctoral researcher in the [Department of Earth Sciences][msu_des] at Montana State University.  
 <br>
-My current research investigates the dynamics of human-environment relationships between urban growth, demographic change, extreme heat and food security in Africa
+My current research investigates the dynamics of human-environment relationships between urban growth, demographic change, extreme heat and food security in Africa.  
 <br>
 Methodologically, my work in interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use is derrived from satellites, where I integrate them with large-scale household surveys in both rural and urban settings. 
 <br>
+
 For more information about my research, interests or potential collaboration, please get in touch.
 <br>
 
