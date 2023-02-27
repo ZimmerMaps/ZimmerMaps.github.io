@@ -19,10 +19,24 @@ output:
 ## Current Research
 
 <br>
+<font size="4"> **Urban demographic variability and exposure to extreme heat and flooding (2022-P)**</font> 
+<br>
+
+This research focuses on measuring and monitoring the spatio-temporal variability in urban demographic structures and their exposure to hazards. This research integrates gridded population and climate data to estimate demographic exposure to extreme heat and flooding, with important implications for maternal and child health, labor productivity and sustainable urban development. 
+<center>
+<br>
+![Urban Demographic Change in Mexico & Japan](demographic_plot.jpg){width=600px; height=300px}
+<br>
+Urban population and dependency ratio for Mexico and Japan (2000-2020). A decrease in dependency ratio through time (Mexico) indicates a growing share of working-age residents relative to children and older people.
+</center>
+<br>
+<br>
+
+<br>
 <font size="4"> **Linkages and interactions between urban food security and rural agricultural systems (2019-P)**</font> 
 <br>
 
-This research investigates linkages and interactions between urban food security and rural agricultural production. We focus on evaluating the impact of environmental variability on rural agricultural production and how this affects urban food security. My dissertation research investigates how the dynamics of urban population growth across secondary cities in southern Africa affect rural-urban linkages and ultimately household food security. We use household survey datasets in combination with large scale socio-environmental data. 
+This research investigates linkages and interactions between urban food security and rural agricultural production. We focus on evaluating the impact of environmental variability on rural agricultural production and how this affects urban food security. My research investigates how the dynamics of urban population growth across secondary cities in southern Africa affect rural-urban linkages and ultimately household food security. We use household survey datasets in combination with large scale socio-environmental data. 
 <center>
 <br>
 ![Urban Agriculture in Choma, Zambia](urban_ag.jpg){width=300px; height=300px}

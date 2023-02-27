@@ -1,6 +1,6 @@
 ---
 title: "Andrew Zimmer"
-description: "Andrew Zimmer - PhD Candidate - Personal Website"
+description: "Andrew Zimmer - Personal Website"
 org_name: "Montana State University"
 site_type: Person
 image: "profile.jpg"
@@ -24,11 +24,9 @@ output:
 ---
 
 ## About Me
-I am a postdoctoral researcher in the [Department of Earth Sciences][msu_des] at Montana State University.  
-<br>
-My current research investigates the dynamics of human-environment relationships between urban growth, demographic change, extreme heat and food security in Africa.  
-<br>
-Methodologically, my work in interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use is derrived from satellites, where I integrate them with large-scale household surveys in both rural and urban settings. 
+I am a postdoctoral researcher in the [Department of Earth Sciences][msu_des] at Montana State University. My research investigates the dynamics of human-environment relationships between climate, urbanization and demographic change, and food security. 
+<br>  
+Methodologically, my work in interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use is derived from satellites, where I integrate them with large-scale household surveys in both rural and urban settings. 
 <br>
 
 For more information about my research, interests or potential collaboration, please get in touch.
