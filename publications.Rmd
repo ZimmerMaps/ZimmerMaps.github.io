@@ -11,7 +11,7 @@ output:
 ---
 ### 2023
 
-Ross, A, Marcantonio, R, Miller-Graff, L, Pearson, A, Bunting, E, **Zimmer, A**. In Press. Does water insecurity mediate the relationship between climate variability and intimate partner violence in sub-Saharan Africa? *Climate and Development*
+Ross, A, Marcantonio, R, Miller-Graff, L, Pearson, A, Bunting, E, **Zimmer, A**. In Press. Does water insecurity mediate the relationship between climate variability and intimate partner violence in sub-Saharan Africa? *Climate and Development*. [[Download]](./Publications/ross_2023_cd.pdf){target="_blank"}
 
 ### 2022
 
