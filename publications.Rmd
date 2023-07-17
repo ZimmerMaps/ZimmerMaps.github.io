@@ -11,6 +11,8 @@ output:
 ---
 ### 2023
 
+Gerlak, AK, Guido, Z, Owen, G, Rodriguez McGoffin, S, Louder, E, Davies, J, Smith, KJ, **Zimmer, A**, Murviet, A, Meadow, A, Shrestha, P, Joshi, N. Stakeholder Engagement in the Co-Production of Knowledge for Environmental Decision-making. *World Development.* [[Download]](https://www.sciencedirect.com/science/article/abs/pii/S0305750X23001547?dgcid=coauthor#s0095){target="_blank"}
+
 Ross, A, Marcantonio, R, Miller-Graff, L, Pearson, A, Bunting, E, **Zimmer, A**. In Press. Does water insecurity mediate the relationship between climate variability and intimate partner violence in sub-Saharan Africa? *Climate and Development*. [[Download]](./Publications/ross_2023_cd.pdf){target="_blank"}
 
 ### 2022
