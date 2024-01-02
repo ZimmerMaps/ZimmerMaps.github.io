@@ -5,31 +5,45 @@ org_name: "Montana State University"
 site_type: Person
 image: "profile.jpg"
 links:
-  -  label: Research
-     url: "research.html"
-  -  label: Publications
-     url: publications.html
-  -  label: Email
-     url: "mailto:andrew.zimmer1@montana.edu"
+#  - label: Research
+#    url: "research.html"
+  - label: Publications
+    url: publications.html
+  - label: Email
+    url: "mailto:andrew.zimmer1@montana.edu"
   - label: CV
     url: "zimmer_cv.pdf"
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=1-Xk5zMAAAAJ&hl=en"
-#  - label: Twitter
-#    url: "https://twitter.com/ZimmerMaps/"
-#  - label: Teaching
-#     url: "teaching.html"
 output:
   postcards::solana
 ---
 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Zimmer - Personal Website</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Lora', serif;
+    }
+  </style>
+</head>
+<body>
+
 ## About Me
-I am a postdoctoral researcher in the [Department of Earth Sciences][msu_des] at Montana State University. I am a human-environment geographer whose work focuses on the interactions between climate, urbanization and food security. 
+I am a Research Scientist in the [Department of Earth Sciences][msu_des] at Montana State University. I am a human-environment geographer and my work mainly focuses on the interactions between climate, urbanization, and food security. 
 <br>  
-Methodologically, my work in interdisciplinary in nature. I mainly focus on the integration of social and environmental data using GIS and spatial analysis alongside econometric and statistical modelling. Much of the data I use is derived from satellites, where I integrate them with large-scale household surveys in both rural and urban settings. 
+My work is very interdisciplinary and often integrates social and environmental data using GIS and spatial analysis alongside statistic modelling. Much of the data I use is derived from satellites, where I integrate them with large-scale survey or climate data to understand human-environment dynamics.
 <br>
 
-For more information about my research, interests or potential collaboration, please get in touch.
+For more information about my research, interests, or potential collaboration, please get in touch.
 <br>
 
 [msu_des]:https://www.montana.edu/earthsciences/
+
+</body>
+</html>
