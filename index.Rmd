@@ -5,8 +5,8 @@ org_name: "Montana State University"
 site_type: Person
 image: "profile.jpg"
 links:
-#  - label: Research
-#    url: "research.html"
+  - label: Research
+    url: "research.html"
   - label: Publications
     url: publications.html
   - label: Email
