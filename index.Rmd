@@ -5,16 +5,17 @@ org_name: "Montana State University"
 site_type: Person
 image: "profile.jpg"
 links:
-  - label: Research
-    url: "research.html"
-  - label: Publications
-    url: publications.html
+#  - label: Research
+#    url: "research.html"
   - label: Email
     url: "mailto:andrew.zimmer1@montana.edu"
   - label: CV
     url: "zimmer_cv.pdf"
   - label: Google Scholar
     url: "https://scholar.google.com/citations?user=1-Xk5zMAAAAJ&hl=en"
+  - label: Publications
+    url: publications.html
+
 output:
   postcards::solana
 ---
